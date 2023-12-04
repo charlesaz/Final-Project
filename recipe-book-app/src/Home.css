@@ -1,0 +1,26 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 100vh; 
+    padding-top: 250px;
+    color: white;
+}
+
+.home-container {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+    opacity: 0;
+    transform: translateY(50px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
